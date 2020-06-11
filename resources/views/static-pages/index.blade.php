@@ -1,1 +1,5 @@
-<h1>HELLO</h1>
+@extends('layouts.main')
+
+@section('content')
+    <h1>Hello</h1>
+@endsection
