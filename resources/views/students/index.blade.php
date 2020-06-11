@@ -12,6 +12,7 @@
                         <p>Assunt{{ ($student['genre'] === 'm') ? 'o' : 'a'}} da {{ $student['company'] }}</p>
                     </div>
                 </header>
+                
                 <p>{{ $student['description'] }}</p>
             </a>
         @endforeach
