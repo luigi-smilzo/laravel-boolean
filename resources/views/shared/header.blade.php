@@ -4,9 +4,9 @@
     </div>
     <nav class="MainHeader-nav">
         <ul>
-            <li><a href="">home</a></li>
+            <li><a href="{{ route('static-page.home') }}">home</a></li>
             <li><a href="">corso</a></li>
-            <li><a href="">dopo il corso</a></li>
+            <li><a href="{{ route('students.index') }}">dopo il corso</a></li>
             <li><a href="">lezione gratuita</a></li>
             <li><a href="">assumi i nostri studenti</a></li>
             <li><a href="">candidati ora</a></li>

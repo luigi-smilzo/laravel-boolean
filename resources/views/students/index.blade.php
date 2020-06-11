@@ -4,7 +4,7 @@
     <div class="Students">
         <h1>I nostri ex-studenti</h1>
         @foreach($students as $student)
-            <a href="" class="StudentCard">
+            <a href="{{ route('students.show', ['id' => $student['id']] ) }}" class="StudentCard">
                 <header>
                     <img src="{{ $student['img'] }}" alt="{{ $student['name'] }}">
                     <div class="StudentCard-Info">
