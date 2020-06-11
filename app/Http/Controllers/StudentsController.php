@@ -29,7 +29,7 @@ class StudentsController extends Controller
             abort('404');
         }
 
-        return view('students.show');
+        return view('students.show', compact('student'));
     }
 
     // Student ID check
