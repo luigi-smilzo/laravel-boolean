@@ -1,0 +1,29 @@
+/* MIXIN */
+@mixin fontFeatures($size: inherit, $weight: 300, $line-height: 1, $align: left, $family: 'Rubik') {
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $line-height;
+    text-align: $align;
+    font-family: $family;
+}
+
+@mixin linkStyle($color, $transform: none, $decoration: none) {
+    text-decoration: $decoration;
+    color: $color;
+    text-transform: $transform;
+}
+
+/* GENERAL STYLES */
+main {
+    @include fontFeatures(1rem, 300, 1.5);
+}
+
+h1 {
+    @include fontFeatures(3.65rem, 400);
+}
+
+h3 {
+    @include fontFeatures(1.17rem, 500);
+}
+
+
