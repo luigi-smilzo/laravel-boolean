@@ -270,6 +270,10 @@ h3 {
   list-style: none;
 }
 
+.MainHeader-nav ul li:not(:last-child) {
+  margin-left: 5px;
+}
+
 .MainHeader-nav ul li:not(:last-child) a {
   padding: 10px 25px;
   font-size: 0.87rem;

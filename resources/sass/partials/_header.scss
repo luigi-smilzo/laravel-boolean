@@ -12,6 +12,7 @@
     ul {
     list-style: none;
         li:not(:last-child) {
+            margin-left: 5px;
             a {
                 padding: 10px 25px;
                 @include fontFeatures(0.87rem, 400);

@@ -1,4 +1,4 @@
-<footer class="MainFooter u-flex">
+<footer class="MainFooter">
     <div class="u-container u-flex u-justifyBtw u-alignCtr">
         <div class="MainFooter-left">
             <img src="https://www.boolean.careers/images/common/logo-white.png" alt="">
