@@ -19,7 +19,7 @@ main {
 }
 
 h1 {
-    @include fontFeatures(3.65rem, 400);
+    @include fontFeatures(3.78rem, 300, 1.1);
 }
 
 h3 {

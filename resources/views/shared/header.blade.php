@@ -9,7 +9,7 @@
             <li><a href="{{ route('students.index') }}" class="{{ Request::is('students') ? 'isActive' : '' }}">dopo il corso</a></li>
             <li><a href="#">lezione gratuita</a></li>
             <li><a href="#">assumi i nostri studenti</a></li>
-            <li><a href="#" class="btn">candidati ora</a></li>
+            <li><a href="#" class="btn ml-10">candidati ora</a></li>
         </ul>
     </nav>
 </header>

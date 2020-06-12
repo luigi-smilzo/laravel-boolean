@@ -11,13 +11,39 @@
     align-items: center;
 }
 
+.u-container {
+    max-width: 1140px;
+    padding: 15px;
+    margin: 0 auto;
+}
+
+// Fine margin
+@for $i from 1 through 10 {
+    .ml-#{$i} {
+        margin-left: 5px * $i;
+    }
+    
+    .mr-#{$i} {
+        margin-right: 5px * $i;
+    }
+    
+    .mt-#{$i} {
+        margin-top: 5px * $i;
+    }
+    
+    .mb-#{$i} {
+        margin-bottom: 5px * $i;
+    }
+}
+
+
 /* COMPONENTS */
 .btn {
     @include fontFeatures(1rem, 400);
     @include linkStyle($col-light, uppercase);
     background: $col-action;
     border-radius: 5px;
-    padding:10px 30px;
+    padding: 10px 30px;
     &:hover {
         background: lighten($col-action, 5%);
     }
