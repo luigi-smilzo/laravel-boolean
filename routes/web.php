@@ -20,4 +20,4 @@ Route::get('/faq', 'StaticPageController@faq')->name('static-page.faq');
 
 // Students
 Route::get('/students', 'StudentsController@index')->name('students.index');
-Route::get('/students/{id}', 'StudentsController@show')->name('students.show');
+Route::get('/students/{slug}', 'StudentsController@show')->name('students.show');

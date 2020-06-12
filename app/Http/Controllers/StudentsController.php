@@ -7,23 +7,26 @@ use Illuminate\Http\Request;
 class StudentsController extends Controller
 {
     private $students;
+    private $genders;
 
     function __construct() {
-        $this->students = config('students');
+        $this->students = config('students.students');
+        $this->genders = config('students.genders');
     }
 
     // Students index
     public function index() {
         $students = $this->students;
+        $genders = $this->genders;
 
-        return view('students.index', compact('students'));
+        return view('students.index', compact('students', 'genders'));
     }
 
     //Students show
-    public function show($id) {
+    public function show($slug) {
 
         // 404 check
-        $student = $this->checkStudentById($id, $this->students);
+        $student = $this->checkStudentById($slug, $this->students);
         
         if (! $student) {
             abort('404');
@@ -33,9 +36,9 @@ class StudentsController extends Controller
     }
 
     // Student ID check
-    private function checkStudentById($id, $array) {
+    private function checkStudentById($slug, $array) {
         foreach ($array as $student) {
-            if ( $student['id'] == $id) {
+            if ( $student['slug'] == $slug) {
                 return $student;
             }
         }

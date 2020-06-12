@@ -9,10 +9,10 @@
     </div>
     <div class="MainFooter-right">
         <ul>
-            <li><a href="">Lezione gratuita</a></li>
-            <li><a href="">Domande frequenti</a></li>
-            <li><a href="">Privacy policy</a></li>
-            <li><a href="">Lavora con noi</a></li>
+            <li><a href="#">Lezione gratuita</a></li>
+            <li><a href="{{ route('static-page.faq') }}">Domande frequenti</a></li>
+            <li><a href="{{ route('static-page.privacy') }}">Privacy policy</a></li>
+            <li><a href="#">Lavora con noi</a></li>
         </ul>
     </div>
 </footer>
