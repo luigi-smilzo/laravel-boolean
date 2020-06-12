@@ -4,12 +4,12 @@
     </div>
     <nav class="MainHeader-nav u-flex u-alignCtr">
         <ul class="u-flex">
-            <li class="{{ Request::is('/') ? 'isActive' : '' }}"><a href="{{ route('static-page.home') }}">home</a></li>
+            <li><a href="{{ route('static-page.home') }}" class="{{ Request::is('/') ? 'isActive' : '' }}">home</a></li>
             <li><a href="#">corso</a></li>
-            <li class="{{ Request::is('students') ? 'isActive' : '' }}"><a href="{{ route('static-page.home') }}"><a href="{{ route('students.index') }}">dopo il corso</a></li>
+            <li><a href="{{ route('students.index') }}" class="{{ Request::is('students') ? 'isActive' : '' }}">dopo il corso</a></li>
             <li><a href="#">lezione gratuita</a></li>
             <li><a href="#">assumi i nostri studenti</a></li>
-            <li><a href="#">candidati ora</a></li>
+            <li><a href="#" class="btn">candidati ora</a></li>
         </ul>
     </nav>
 </header>

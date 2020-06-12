@@ -11,17 +11,17 @@
 .MainHeader-nav {
     ul {
     list-style: none;
-        li {
-            padding: 10px 25px;
-            border-bottom: 2px solid transparent;
-            transition: border .2s;
-            &:hover,
-            &.isActive {
-                border-color: $col-action;
-            }
+        li:not(:last-child) {
             a {
+                padding: 10px 25px;
                 @include fontFeatures(0.87rem, 400);
                 @include linkStyle($col-dark, uppercase);
+                border-bottom: 2px solid transparent;
+                transition: border .2s;
+                &:hover,
+                &.isActive {
+                    border-color: $col-action;
+                }
             }
         }
     }

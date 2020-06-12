@@ -45,7 +45,7 @@ h3 {
   font-family: "Rubik";
 }
 
-/* UTILITIES */
+/* DISPLAY */
 
 .u-flex {
   display: flex;
@@ -57,6 +57,26 @@ h3 {
 
 .u-alignCtr {
   align-items: center;
+}
+
+/* COMPONENTS */
+
+.btn {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  text-align: left;
+  font-family: "Rubik";
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  background: #61ce4e;
+  border-radius: 5px;
+  padding: 10px 30px;
+}
+
+.btn:hover {
+  background: #73d462;
 }
 
 .MainHeader {
@@ -72,18 +92,8 @@ h3 {
   list-style: none;
 }
 
-.MainHeader-nav ul li {
+.MainHeader-nav ul li:not(:last-child) a {
   padding: 10px 25px;
-  border-bottom: 2px solid transparent;
-  transition: border 0.2s;
-}
-
-.MainHeader-nav ul li:hover,
-.MainHeader-nav ul li.isActive {
-  border-color: #61ce4e;
-}
-
-.MainHeader-nav ul li a {
   font-size: 0.87rem;
   font-weight: 400;
   line-height: 1;
@@ -92,5 +102,12 @@ h3 {
   text-decoration: none;
   color: #1b3c59;
   text-transform: uppercase;
+  border-bottom: 2px solid transparent;
+  transition: border 0.2s;
+}
+
+.MainHeader-nav ul li:not(:last-child) a:hover,
+.MainHeader-nav ul li:not(:last-child) a.isActive {
+  border-color: #61ce4e;
 }
 

@@ -1,4 +1,4 @@
-/* UTILITIES */
+/* DISPLAY */
 .u-flex {
     display: flex;
 }
@@ -9,4 +9,16 @@
 
 .u-alignCtr {
     align-items: center;
+}
+
+/* COMPONENTS */
+.btn {
+    @include fontFeatures(1rem, 400);
+    @include linkStyle($col-light, uppercase);
+    background: $col-action;
+    border-radius: 5px;
+    padding:10px 30px;
+    &:hover {
+        background: lighten($col-action, 5%);
+    }
 }
