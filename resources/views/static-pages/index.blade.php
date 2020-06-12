@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="Home u-container">
-        <div class="Jumbotron u-flex">
+        <div class="Jumbotron u-flex u-justifyBtw">
             <div class="Jumbotron-text">
                 <h1>diventa <strong>sviluppatore web</strong></h1>
                 <p>Trasformiamo la tua passione in una carriera. Se non trovi lavoro, ti rimborsiamo.</p>

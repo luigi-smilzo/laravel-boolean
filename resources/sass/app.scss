@@ -5,9 +5,21 @@
     box-sizing: border-box;
 }
 
+/* GENERAL RULES */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    main {
+        padding: 0 15px;
+        flex-grow: 1;
+    }
+}
+
 /* PARTIALS */
 @import 'partials/variables';
 @import 'partials/typography';
 @import 'partials/utilities';
 @import 'partials/header';
+@import 'partials/footer';
 @import 'partials/home';

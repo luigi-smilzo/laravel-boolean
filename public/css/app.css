@@ -6,6 +6,19 @@
   box-sizing: border-box;
 }
 
+/* GENERAL RULES */
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+body main {
+  padding: 0 15px;
+  flex-grow: 1;
+}
+
 /* PARTIALS */
 
 /* COLORS */
@@ -61,7 +74,6 @@ h3 {
 
 .u-container {
   max-width: 1140px;
-  padding: 15px;
   margin: 0 auto;
 }
 
@@ -277,16 +289,68 @@ h3 {
   border-color: #61ce4e;
 }
 
+.MainFooter {
+  padding: 70px 0 30px 0;
+  background: #1b3c59;
+}
+
+.MainFooter > .u-container {
+  width: 100%;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ffffff;
+}
+
+.MainFooter-left img {
+  max-width: 200px;
+}
+
+.MainFooter-left .Addresses {
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+  font-family: "Rubik";
+  color: #ffffff;
+}
+
+.MainFooter-left .Addresses span {
+  display: block;
+}
+
+.MainFooter-right ul {
+  list-style: none;
+}
+
+.MainFooter-right ul li {
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: right;
+  font-family: "Rubik";
+}
+
+.MainFooter-right ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: none;
+}
+
+.MainFooter-right ul li a:hover {
+  text-decoration: underline;
+  color: #ffffff;
+  text-transform: none;
+}
+
 .Home {
   padding: 80px 0;
 }
 
 .Home .Jumbotron {
-  padding: 0 15px;
+  width: 100%;
 }
 
 .Home .Jumbotron .Jumbotron-text {
-  flex-basis: 70%;
+  flex-basis: 65%;
 }
 
 .Home .Jumbotron .Jumbotron-text h1 {
@@ -317,6 +381,8 @@ h3 {
 }
 
 .Home .Jumbotron .Jumbotron-picture img {
+  display: block;
+  margin: 0 auto;
   max-width: 90%;
 }
 
