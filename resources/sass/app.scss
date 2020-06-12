@@ -1,2 +1,12 @@
+/* SOFT RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* PARTIALS */
 @import 'partials/variables';
 @import 'partials/typography';
+@import 'partials/utilities';
+@import 'partials/header';

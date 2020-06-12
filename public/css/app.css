@@ -1,3 +1,13 @@
+/* SOFT RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* PARTIALS */
+
 /* COLORS */
 
 /* GENERAL RULES */
@@ -33,5 +43,54 @@ h3 {
   line-height: 1;
   text-align: left;
   font-family: "Rubik";
+}
+
+/* UTILITIES */
+
+.u-flex {
+  display: flex;
+}
+
+.u-justifyBtw {
+  justify-content: space-between;
+}
+
+.u-alignCtr {
+  align-items: center;
+}
+
+.MainHeader {
+  padding: 15px;
+  height: 90px;
+}
+
+.MainHeader-logo img {
+  height: 100%;
+}
+
+.MainHeader-nav ul {
+  list-style: none;
+}
+
+.MainHeader-nav ul li {
+  padding: 10px 25px;
+  border-bottom: 2px solid transparent;
+  transition: border 0.2s;
+}
+
+.MainHeader-nav ul li:hover,
+.MainHeader-nav ul li.isActive {
+  border-color: #61ce4e;
+}
+
+.MainHeader-nav ul li a {
+  font-size: 0.87rem;
+  font-weight: 400;
+  line-height: 1;
+  text-align: left;
+  font-family: "Rubik";
+  text-decoration: none;
+  color: #1b3c59;
+  text-transform: uppercase;
 }
 
