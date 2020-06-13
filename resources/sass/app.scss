@@ -11,7 +11,6 @@ body {
     display: flex;
     flex-direction: column;
     main {
-        padding: 0 15px;
         flex-grow: 1;
     }
 }
@@ -24,3 +23,4 @@ body {
 @import 'partials/footer';
 @import 'partials/home';
 @import 'partials/privacy';
+@import 'partials/faq';

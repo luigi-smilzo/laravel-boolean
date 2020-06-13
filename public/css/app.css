@@ -15,7 +15,6 @@ body {
 }
 
 body main {
-  padding: 0 15px;
   flex-grow: 1;
 }
 
@@ -408,5 +407,75 @@ h3 {
   line-height: 1.5;
   text-align: left;
   font-family: "Rubik";
+}
+
+.Faq-header {
+  padding: 60px 90px;
+}
+
+.Faq-header h1 {
+  font-size: 2.8rem;
+  font-weight: 400;
+  line-height: 1;
+  text-align: left;
+  font-family: "Rubik";
+}
+
+.Faq-header p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1;
+  text-align: left;
+  font-family: "Rubik";
+}
+
+.Faq-questions {
+  width: 100%;
+}
+
+.Faq-questions .Questions {
+  flex-basis: 50%;
+  padding: 60px 90px;
+}
+
+.Faq-questions .Questions-header h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1;
+  text-align: left;
+  font-family: "Rubik";
+}
+
+.Faq-questions .Questions-list ul {
+  list-style: none;
+}
+
+.Faq-questions .Questions-list ul li {
+  position: relative;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 3;
+  text-align: left;
+  font-family: "Rubik";
+}
+
+.Faq-questions .Questions-list ul li::after {
+  position: absolute;
+  top: -50%;
+  right: 0;
+  transform: translateY(10%);
+  content: "+";
+  font-size: 2.5rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.Questions.Questions--before {
+  background: #e8ebf1;
+}
+
+.Questions.Questions--after {
+  background: #1b3c59;
+  color: #ffffff;
 }
 
