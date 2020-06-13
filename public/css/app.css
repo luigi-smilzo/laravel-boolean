@@ -256,6 +256,30 @@ h3 {
   background: #73d462;
 }
 
+.u-studentCard {
+  text-decoration: none;
+  color: #1b3c59;
+  text-transform: none;
+  width: 530px;
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 5px 7px 14px 0 #b0b0b0;
+}
+
+.u-studentCard header {
+  display: flex;
+}
+
+.u-studentCard header img {
+  width: 100px;
+  border-radius: 5px;
+}
+
+.u-studentCard p {
+  font-weight: 400;
+}
+
 .MainHeader {
   padding: 15px;
   height: 90px;
@@ -410,7 +434,7 @@ h3 {
 }
 
 .Faq-header {
-  padding: 60px 90px;
+  padding: 60px 90px 30px;
 }
 
 .Faq-header h1 {
@@ -477,5 +501,35 @@ h3 {
 .Questions.Questions--after {
   background: #1b3c59;
   color: #ffffff;
+}
+
+.Students {
+  position: relative;
+  padding: 60px 0;
+  background: #e8ebf1;
+}
+
+.Students h1 {
+  font-size: 2.8rem;
+  font-weight: 300;
+  line-height: inherit;
+  text-align: center;
+  font-family: "Rubik";
+}
+
+.Students-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  row-gap: 40px;
+}
+
+.Students-filter {
+  position: absolute;
+  top: 30px;
+  right: 50%;
+  transform: translateX(50%);
 }
 

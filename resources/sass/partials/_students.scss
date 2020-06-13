@@ -1,0 +1,21 @@
+.Students {
+    position: relative;
+    padding: 60px 0;
+    background: $col-alt;
+    h1 {
+        @include fontFeatures(2.8rem, 300, inherit, center);
+    }
+    &-cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-between;
+        column-gap: 20px;
+        row-gap: 40px;
+    }
+    &-filter {
+        position: absolute;
+        top: 30px;
+        right: 50%;
+        transform: translateX(50%);
+    }
+}

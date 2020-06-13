@@ -47,3 +47,22 @@
         background: lighten($col-action, 5%);
     }
 }
+
+.u-studentCard {
+    @include linkStyle($col-dark, none, none);
+    width: 530px;
+    background:$col-light;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 5px 7px 14px 0 #b0b0b0;
+    header {
+        display: flex;
+        img {
+            width: 100px;
+            border-radius: 5px;
+        }
+    }
+    p {
+        font-weight: 400;
+    }
+}
