@@ -1,0 +1,9 @@
+.PrivacyPolicy {
+    padding-bottom: 80px;
+    h1 {
+        @include fontFeatures(2rem, 500);
+    }
+    p {
+        @include fontFeatures(inherit, 400, 1.5);
+    }
+}
